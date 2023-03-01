@@ -63,4 +63,16 @@ body {
   /* tile 색상 변경 */
   color: hsl(200, 25%, var(--text-lightness));
   background: hsl(200, 50%, var(--background-lightness));
+
+  /* create animation */
+  animation: create 200ms ease-in-out;
+  /* moving animation */
+  transition: 100ms ease-in-out;
+}
+
+@keyframes create {
+  0% {
+    opacity: 0.5;
+    transform: scale(0);
+  }
 }
